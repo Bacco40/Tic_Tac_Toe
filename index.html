@@ -17,10 +17,10 @@
                     <div class="name" id="name1">Player1</div>
                     <div class="simbol" id="simbol1">X</div>
                     <div class="img"><img src="img/user.png"></div>
-                    <div class="result">0</div>
+                    <div class="result" id="point1">0</div>
                 </div>
                 <div class="gameboard">
-                    <div class="field" id="0"></div>
+                    <div class="field" class="field1" id="0"></div>
                     <div class="field" id="1"></div>
                     <div class="field" id="2"></div>
                     <div class="field" id="3"></div>
@@ -34,17 +34,15 @@
                     <div class="name" id="name2">Player2</div>
                     <div class="simbol" id="simbol2">O</div>
                     <div class="img"><img src="img/user.png"></div>
-                    <div class="result">0</div>
+                    <div class="result" id="point2">0</div>
                 </div>
             </div>
             <div class="footer">Copyright © Matteo Bacchetti - The Odin Project 2021</div>
         </div>
         <div class="popUp">
             <form id="form">
-                <div class="logTit">
-                    Tic-Tac-Toe
-                    <p>Insert the players data:</p>
-                </div>
+                <div class="Tit2">Tic-Tac-Toe</div>
+                <p class="sub2">Insert the players data:</p>
                 <div class="data">
                     <p>Player1: *</p>
                     <div><input id="player1" type="text" value="" autocomplete="off" placeholder="Name"></div>
@@ -59,9 +57,13 @@
                     </div>
                 </div>
                 <div class="formBtn">
-                    <div><button class="Start">Confirm and start the Game!</button></div>
+                    <div><button class="Start">Start the battle!</button></div>
                 </div>
             </form>
+        </div>
+        <div class="winner">
+            <div class="winMessage"></div>
+            <div><button class="restart">Play Again</button></div>
         </div>
     </body>
 </html>

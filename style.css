@@ -7,6 +7,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    opacity: 40%;
 }
 .header{
     padding: 15px;
@@ -54,20 +55,93 @@ img{
     height:30vw;
 }
 .field{
+    display: flex;
     width:30%;
+    height:33%;
     background-color: rgb(37, 43, 43);
     border-radius: 25px;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    color: lightgray;
 }
 .field:hover{
     opacity: 80%;
     cursor: pointer;
 }
 .popUp{
-    display: none;
+    display: flex;
+    position:fixed;
+    top:70px;
+    left:40%;
+    background-color: rgb(226, 224, 224) ;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+    padding:25px;
 }
-
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+p{
+    margin: 0;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    color: rgb(37, 43, 43);
+}
+.formBtn{
+    display: flex;
+    justify-content: right;
+}
+.Tit2{
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(37, 43, 43);
+}
+.sub2{
+    padding: 0;
+    text-align: center;
+}
+button{
+    margin-top: 10px;
+    padding: 7px 17px;
+    font-size: 16px;
+    border:0;
+    border-radius: 10px;
+    color: rgb(31, 32, 32);
+    background-color:rgb(158, 155, 155) ;
+    cursor: pointer;
+}
+input{
+    margin:0;
+    width:198.333px;
+}
+.Start:hover{
+    opacity: 90%;
+}
 .footer{
     padding-top: 25px;
     font-size: 18px;
     color:rgb(107, 106, 106) ;
+}
+.winner{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position:fixed;
+    top:70px;
+    left:30%;
+    background-color: rgb(226, 224, 224) ;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+    padding:25px;
+}
+.winMessage{
+    text-align: center;
+    padding: 15px;
+    font-size: 42px;
+    font-weight: bold;
+    color: rgb(37, 43, 43);
 }
